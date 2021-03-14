@@ -41,7 +41,7 @@
 //#define MATRIX_COL_PINS { A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, D0, A13, A14, A15 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 0
+#define DEBOUNCE 5
 
 #define NO_DEBUG 1
 #define NO_PRINT 1

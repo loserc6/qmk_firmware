@@ -164,12 +164,13 @@ void matrix_init(void) {
 }
 
 uint8_t matrix_scan(void) {
-    debounce(raw_matrix, matrix, MATRIX_ROWS, matrix_changed);
 
     matrix_scan_quantum();
 
+    __disable_irq();
     bool change = matrix_changed;
     matrix_changed = false;
+    __enable_irq();
     return change;
 }
 
@@ -226,6 +227,7 @@ OSAL_IRQ_HANDLER(Vector84) {
             setPinOutput(col_pins[col_index]);
         }
         reset_pwm();
+        debounce(raw_matrix, matrix, MATRIX_ROWS, matrix_changed);
     }
 
     current_row = (current_row + 1) % LED_MATRIX_ROWS;
