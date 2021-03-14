@@ -1,5 +1,6 @@
 #include <string.h>
 #include "quantum.h"
+#include "led_matrix.h"
 
 uint8_t led_state[LED_DRIVER_LED_COUNT];
 

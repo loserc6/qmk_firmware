@@ -25,5 +25,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LED_MATRIX_ROW_PINS { C1, C2, D4, C9, C10 }
 
 #define LED_DRIVER_LED_COUNT (LED_MATRIX_ROWS * LED_MATRIX_COLS)
+#define DRIVER_LED_TOTAL LED_DRIVER_LED_COUNT
 
 #define LED_MATRIX_MAXIMUM_BRIGHTNESS 255

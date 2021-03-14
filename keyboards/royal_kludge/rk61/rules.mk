@@ -41,7 +41,6 @@ OPT_DEFS = -O2
 #   comment out to disable the options.
 #
 LTO_ENABLE = no # linker optimization
-BACKLIGHT_ENABLE = no
 MAGIC_ENABLE = yes
 BOOTMAGIC_ENABLE = no # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = no    # Mouse keys
@@ -51,7 +50,8 @@ NKRO_ENABLE = yes        # USB Nkey Rollover
 SERIAL_LINK_ENABLE = no
 WAIT_FOR_USB = no
 CUSTOM_MATRIX = yes
-LED_MATRIX_ENABLE = custom
+LED_MATRIX_ENABLE = yes
+LED_MATRIX_DRIVER = custom
 
 #DEBOUNCE_TYPE = sym_eager_pk
 
