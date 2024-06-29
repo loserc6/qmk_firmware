@@ -47,6 +47,7 @@ MOUSEKEY_ENABLE = no    # Mouse keys
 EXTRAKEY_ENABLE = no    # Audio control and System control
 SLEEP_LED_ENABLE = no   # Breathing sleep LED during USB suspend
 NKRO_ENABLE = yes        # USB Nkey Rollover
+VIA_ENABLE = yes
 SERIAL_LINK_ENABLE = no
 WAIT_FOR_USB = no
 CUSTOM_MATRIX = yes
